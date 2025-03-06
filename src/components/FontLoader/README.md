@@ -47,11 +47,12 @@ const BaseExample = createWithRemoteLoader({
                     {list.map(({ name, font_class }) => {
                       return (
                         <Space className="item" direction="vertical" align="center" key={name}>
-                          <Icon type={font_class} size={value} colorful/>
+                          <Icon type={font_class} size={value} colorful />
                           <Typography.Text
                             copyable={{
                               text: '<Icon type="' + font_class + '" size={' + value + '} colorful />'
-                            }}>
+                            }}
+                          >
                             {font_class}
                           </Typography.Text>
                           <div>{name}</div>

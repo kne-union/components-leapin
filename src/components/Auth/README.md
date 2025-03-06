@@ -25,11 +25,15 @@
 - _Auth(@components/Auth)
 
 ```jsx
-const {default:Auth} = _Auth;
-const BaseExample = ()=>{
-    return <Auth title="Welcome to
+const { default: Auth } = _Auth;
+const BaseExample = () => {
+  return (
+    <Auth
+      title="Welcome to
 Senior Product Manager
-Al video interview"/>;
+Al video interview"
+    />
+  );
 };
 
 render(<BaseExample />);
