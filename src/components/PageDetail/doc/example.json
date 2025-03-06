@@ -1,0 +1,49 @@
+{
+  "isFull": true,
+  "list": [
+    {
+      "title": "这里填写示例标题",
+      "description": "这里填写示例说明",
+      "code": "./base.js",
+      "scope": [
+        {
+          "name": "_JobDetail",
+          "packageName": "@components/PageDetail"
+        }
+      ]
+    },
+    {
+      "title": "这里填写示例标题",
+      "description": "这里填写示例说明",
+      "code": "./header.js",
+      "scope": [
+        {
+          "name": "_JobDetail",
+          "packageName": "@components/PageDetail"
+        }
+      ]
+    },
+    {
+      "title": "这里填写示例标题",
+      "description": "这里填写示例说明",
+      "code": "./detail.js",
+      "scope": [
+        {
+          "name": "_JobDetail",
+          "packageName": "@components/PageDetail"
+        }
+      ]
+    },
+    {
+      "title": "这里填写示例标题",
+      "description": "这里填写示例说明",
+      "code": "./company.js",
+      "scope": [
+        {
+          "name": "_JobDetail",
+          "packageName": "@components/PageDetail"
+        }
+      ]
+    }
+  ]
+}

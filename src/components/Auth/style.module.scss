@@ -1,0 +1,31 @@
+.card {
+  border-radius: 32px;
+  padding: 64px;
+  background: #ffffff;
+}
+
+.tips {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.form-inner {
+  background: #fcfbfc;
+  padding: 32px;
+  border-radius: 20px;
+  width: 760px;
+
+  :global {
+    .ant-card {
+      background: transparent;
+    }
+
+    .ant-tabs-nav:before {
+      border: none;
+    }
+  }
+}
+
+.code-btn {
+  margin-top: 28px;
+}
