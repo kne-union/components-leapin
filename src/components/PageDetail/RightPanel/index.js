@@ -28,8 +28,8 @@ const RightPanel = createWithRemoteLoader({
           <Flex gap={12} vertical>
             {options.map((item, index) => {
               return (
-                <Flex gap={4}>
-                  {item.icon && <span>{item.icon}</span>}
+                <Flex gap={4} align="center" key={index}>
+                  {item.icon}
                   <span>{item.children}</span>
                 </Flex>
               );
