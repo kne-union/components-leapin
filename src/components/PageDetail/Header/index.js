@@ -1,9 +1,8 @@
-import { createWithRemoteLoader } from '@kne/remote-loader';
 import { Flex, Button, Space } from 'antd';
 import classnames from 'classnames';
 import style from './style.module.scss';
 
-const Header = ({ remoteModules, className, name, options = [], buttons = [] }) => {
+const Header = ({ className, name, options = [], buttons = [] }) => {
   return (
     <div className={classnames(style['card'], className)}>
       <Flex justify="space-between" align="center">
