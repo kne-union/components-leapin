@@ -36,19 +36,22 @@ const BaseExample = () => {
       <Button
         onClick={() => {
           ref.current.restart();
-        }}>
+        }}
+      >
         重新开始
       </Button>
       <Button
         onClick={() => {
           ref.current.pause();
-        }}>
+        }}
+      >
         暂停
       </Button>
       <Button
         onClick={() => {
           ref.current.start();
-        }}>
+        }}
+      >
         开始
       </Button>
     </Flex>
