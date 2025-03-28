@@ -12,8 +12,8 @@ const Header = ({ remoteModules, className, name, options = [], buttons = [] }) 
           <Flex gap={20}>
             {options.map((item, index) => {
               return (
-                <Flex gap={4} index={index}>
-                  {item.icon && <span>{item.icon}</span>}
+                <Flex gap={4} key={index} align="center">
+                  {item.icon}
                   <span>{item.children}</span>
                 </Flex>
               );

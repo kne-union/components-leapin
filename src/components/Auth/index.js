@@ -15,7 +15,7 @@ const Auth = createWithRemoteLoader({
   const [loginType, setLoginType] = useState('phone');
   return (
     <MainPanel className={className} title={title}>
-      <Form ref={formRef} data={data} onSubmit={onSubmit}>
+      <Form ref={formRef} size="large" data={data} onSubmit={onSubmit}>
         <Flex gap={40} vertical align="center">
           <Flex gap={20} vertical>
             <div className={style['tips']}>{tips}</div>
@@ -27,7 +27,7 @@ const Auth = createWithRemoteLoader({
                   {
                     key: 'phone',
                     label: 'Login with SMS',
-                    children: (
+                    children: loginType === 'phone' && (
                       <FormInfo
                         column={1}
                         list={[<PhoneNumber name="phone" label="phone" labelHidden rule="REQ" interceptor="phone-number-string" realtime />]}
@@ -37,7 +37,9 @@ const Auth = createWithRemoteLoader({
                   {
                     key: 'email',
                     label: 'Login with Email',
-                    children: <FormInfo column={1} list={[<Input name="email" label="email" labelHidden rule="REQ EMAIL" realtime />]} />
+                    children: loginType === 'email' && (
+                      <FormInfo column={1} list={[<Input name="email" label="email" labelHidden rule="REQ EMAIL" realtime />]} />
+                    )
                   }
                 ]}
               />
@@ -47,13 +49,13 @@ const Auth = createWithRemoteLoader({
                 </Col>
                 <Col>
                   <VerificationCodeButton
+                    size="large"
                     key={loginType}
                     onClick={async () => {
-                      return onSend && (await onSend({ data: formRef.current.data }));
+                      return onSend && (await onSend({ data: formRef.current.data, type: loginType }));
                     }}
                     type="primary"
                     className={style['code-btn']}
-                    ghost
                     shape="round"
                     target={{ name: loginType }}
                   >

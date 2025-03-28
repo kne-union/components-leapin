@@ -9,6 +9,15 @@
 
 ### 示例
 
+
+#### 示例样式
+
+```scss
+.example-driver-preview {
+  background: #f6f7f9;
+}
+```
+
 #### 示例代码
 
 - 这里填写示例标题
