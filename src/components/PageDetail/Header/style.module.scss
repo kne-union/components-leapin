@@ -9,3 +9,18 @@
   font-size: 28px;
   color: var(--primary-color);
 }
+
+@media (max-width: 768px) {
+  .card {
+    border-radius: 8px;
+    padding: 12px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .right-options {
+    display: none;
+  }
+}

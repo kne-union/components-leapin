@@ -33,3 +33,14 @@
 .block-content {
   color: var(--font-color-grey);
 }
+
+@media (max-width: 768px) {
+  .card {
+    border-radius: 8px;
+    padding: 12px;
+  }
+
+  .title-content {
+    padding-bottom: 12px;
+  }
+}

@@ -8,3 +8,16 @@
   flex-direction: column;
   flex: 1;
 }
+
+.footer-btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column-reverse;
+  }
+  .footer-btn {
+    display: block;
+  }
+}

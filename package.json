@@ -1,6 +1,6 @@
 {
   "name": "@kne-components/components-leapin",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "业务组件库",
   "scripts": {
     "init": "husky",
@@ -85,6 +85,7 @@
     "sass": "^1.75.0"
   },
   "dependencies": {
+    "@kne/react-intl": "^0.1.6",
     "@kne/use-ref-callback": "^0.1.2",
     "dayjs": "^1.11.13"
   }
