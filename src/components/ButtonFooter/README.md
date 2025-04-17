@@ -16,9 +16,9 @@
 - _ButtonFooter(@components/ButtonFooter)
 
 ```jsx
-const {default:ButtonFooter} = _ButtonFooter;
-const BaseExample = ()=>{
-    return <ButtonFooter />;
+const { default: ButtonFooter } = _ButtonFooter;
+const BaseExample = () => {
+  return <ButtonFooter />;
 };
 
 render(<BaseExample />);
