@@ -34,3 +34,27 @@
 .content {
   max-width: var(--panel-width);
 }
+
+@media (max-width: 768px) {
+  .card {
+    border-radius: 8px;
+    padding: 12px;
+    min-width: unset;
+    min-height: calc(100vh - 48px);
+  }
+
+  .title {
+    padding-left: 0;
+    font-size: 22px;
+    width: 250px;
+  }
+
+  .title-inner {
+    position: relative;
+    margin-top: 34px;
+  }
+
+  .content {
+    max-width: unset;
+  }
+}
