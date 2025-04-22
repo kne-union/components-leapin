@@ -129,7 +129,7 @@ const Auth = createWithIntlProvider(
             </Checkbox>
             <ButtonFooter>
               <SubmitButton type="primary" shape="round" size="large">
-                Confirm
+                {formatMessage({ id: 'submit' })}
               </SubmitButton>
             </ButtonFooter>
           </Flex>
