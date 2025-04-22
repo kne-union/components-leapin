@@ -8,7 +8,8 @@ const locale = {
   send: 'Send',
   applicantName: 'Applicant name',
   termsContent: 'Please read and check the Terms of {link}',
-  terms: 'Service and Privacy'
+  terms: 'Service and Privacy',
+  submit: 'Submit'
 };
 
 export default locale;
