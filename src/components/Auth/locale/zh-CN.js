@@ -4,6 +4,7 @@ const locale = {
   loginWidthSMS: '手机号登录',
   email: '邮箱',
   phone: '手机',
+  privacy: '隐私政策',
   verificationCode: '验证码',
   send: '发送',
   applicantName: '姓名',

@@ -119,7 +119,7 @@ const Auth = createWithIntlProvider(
               </div>
             </Flex>
 
-            <Checkbox name="privacyChecked" label="privacy" labelHidden rule="REQ">
+            <Checkbox name="privacyChecked" label={formatMessage({ id: 'privacy' })} labelHidden rule="REQ">
               {formatMessage(
                 { id: 'termsContent' },
                 {

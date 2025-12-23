@@ -4,6 +4,7 @@ const locale = {
   loginWidthSMS: 'Login with SMS',
   email: 'Email',
   phone: 'Phone',
+  privacy: 'Privacy',
   verificationCode: 'Verification code',
   send: 'Send',
   applicantName: 'Applicant name',
